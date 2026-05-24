@@ -30,7 +30,7 @@ RUN set -x \
   && python${PY} -m venv /ocamt \
   && /ocamt/bin/pip install --no-cache-dir -U pip wheel
 RUN set -x \
-  && /ocamt/bin/pip install --no-cache-dir -e git+https://github.com/xxp-odoo-erp/maintainer-tools@f70373fca6830e6536c3967ba5794311602b4bd4#egg=oca-maintainers-tools \
+  && /ocamt/bin/pip install --no-cache-dir -e git+https://github.com/xxp-odoo-erp/xxp-maintainer-tools@xxp#egg=oca-maintainers-tools \
   && ln -s /ocamt/bin/oca-gen-addons-table /usr/local/bin/ \
   && ln -s /ocamt/bin/oca-gen-addon-readme /usr/local/bin/ \
   && ln -s /ocamt/bin/oca-gen-addon-icon /usr/local/bin/ \
